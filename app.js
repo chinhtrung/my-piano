@@ -46,8 +46,6 @@
 // targetRandomKey();
 
 
-
-
 var keyData = {
     q: {
         sound: new Howl({
@@ -182,26 +180,29 @@ var keyData = {
 }
 
 let choose = document.querySelector(".key.white.C.octave4");
-    
-choose.addEventListener('mouseover', ()=>{
-    console.log("I'M HOVERED");
-})
 
-var eventT = new MouseEvent('mouseover', {
-    'view': window,
-    'bubbles': true,
-    'cancelable': true
-});
+var lastEvent;
+var heldKeys = {};
 
 document.onkeydown = function (e) {
-    // console.dir(e);
+    if (lastEvent && lastEvent.key == e.key) {
+        return;
+    }
+
+    lastEvent = e;
+    heldKeys[e.key] = true;
+
     if(keyData[e.key]){
         keyData[e.key].sound.play();
     }
-  
-    console.dir(choose);
 
-    choose.dispatchEvent(eventT);
+    choose.classList.add("white-press");
 };
+
+document.onkeyup = function (e) {
+    lastEvent = null;
+    heldKeys[e.key] = false;
+    choose.classList.remove("white-press");
+}
 
 

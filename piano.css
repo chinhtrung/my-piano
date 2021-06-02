@@ -57,6 +57,17 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
     opacity: 1;
     background-color: #fff 7;
 }
+
+/* add */
+.white-press {
+    transform: rotateX(-4.2deg);
+}
+.white-press::after{
+    transform: rotateX(-4.2deg);
+}
+
+/*end add */
+
 .white .front {
     width: 100%;
     height: 0.75em;
@@ -97,6 +108,18 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
     opacity: 1;
     background-color: #000 7;
 }
+
+/* add */
+.black-press {
+    transform: translateZ(0.25em) rotateX(-4.2deg);
+}
+
+.black-press::after {
+    opacity: 1;
+    background-color: #000 7;
+}
+/* end add */
+
 .black .front {
     width: 100%;
     height: 1.4em;

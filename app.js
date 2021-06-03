@@ -195,6 +195,8 @@ document.onkeydown = function (e) {
         keyData[e.key].sound.play();
     }
 
+    console.dir(e);
+
     let keyOnKeyboard = document.querySelector("#"+e.code);
     keyOnKeyboard.classList.add("selected");
     choose.classList.add("white-press");

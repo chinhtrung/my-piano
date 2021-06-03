@@ -183,121 +183,200 @@ var keyData = {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.C.octave1",
+        piaKeyClass: ".white.C.octave2",
         piaKeyPressClass: "white-press"
     },
     "~" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".black.Db.octave1",
+        piaKeyClass: ".black.Db.octave2",
         piaKeyPressClass: "black-press"
     },
     "1" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.D.octave1",
+        piaKeyClass: ".white.D.octave2",
         piaKeyPressClass: "white-press"
     },
     "!" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".black.Eb.octave1",
+        piaKeyClass: ".black.Eb.octave2",
         piaKeyPressClass: "black-press"
     },
     "2" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.E.octave1",
+        piaKeyClass: ".white.E.octave2",
         piaKeyPressClass: "white-press"
     },
     "@" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.F.octave1",
+        piaKeyClass: ".white.F.octave2",
         piaKeyPressClass: "white-press"
     },
     "3" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.F.octave1",
+        piaKeyClass: ".white.F.octave2",
         piaKeyPressClass: "white-press"
     },
     "#" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".black.Gb.octave1",
+        piaKeyClass: ".black.Gb.octave2",
         piaKeyPressClass: "black-press"
     },
     "4" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.G.octave1",
+        piaKeyClass: ".white.G.octave2",
         piaKeyPressClass: "white-press"
     },
     "$" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".black.Ab.octave1",
+        piaKeyClass: ".black.Ab.octave2",
         piaKeyPressClass: "black-press"
     },
     "5" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.A.octave1",
+        piaKeyClass: ".white.A.octave2",
         piaKeyPressClass: "white-press"
     },
     "%" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".black.Bb.octave1",
+        piaKeyClass: ".black.Bb.octave2",
         piaKeyPressClass: "black-press"
     },
     "6" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.B.octave1",
+        piaKeyClass: ".white.B.octave2",
         piaKeyPressClass: "white-press"
     },
     "^" : {
         sound: new Howl({
             urls: ['./sounds/bubbles.mp3']
         }),
-        piaKeyClass: ".white.C.octave2",
+        piaKeyClass: ".white.C.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "q" : {
+        sound: new Howl({
+            urls: ['./sounds/bubbles.mp3']
+        }),
+        piaKeyClass: ".white.C.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "Q" : {
+        sound: new Howl({
+            urls: ['./sounds/bubbles.mp3']
+        }),
+        piaKeyClass: ".black.Db.octave3",
+        piaKeyPressClass: "black-press"
+    },
+    "w" : {
+        sound: new Howl({
+            urls: ['./sounds/clay.mp3']
+        }),
+        piaKeyClass: ".white.D.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "W" : {
+        sound: new Howl({
+            urls: ['./sounds/clay.mp3']
+        }),
+        piaKeyClass: ".black.Eb.octave3",
+        piaKeyPressClass: "black-press"
+    },
+    "e" : {
+        sound: new Howl({
+            urls: ['./sounds/confetti.mp3']
+        }),
+        piaKeyClass: ".white.E.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "E" : {
+        sound: new Howl({
+            urls: ['./sounds/confetti.mp3']
+        }),
+        piaKeyClass: ".white.F.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "r" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.F.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "R" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Gb.octave3",
+        piaKeyPressClass: "black-press"
+    },
+    "t" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.G.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "T" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Ab.octave3",
+        piaKeyPressClass: "black-press"
+    },
+    "a" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.A.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "A" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Bb.octave3",
+        piaKeyPressClass: "black-press"
+    },
+    "s" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.B.octave3",
+        piaKeyPressClass: "white-press"
+    },
+    "S" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.C.octave4",
         piaKeyPressClass: "white-press"
     },
 
-    // q: {
-    //     sound: new Howl({
-    //       urls: ['./sounds/bubbles.mp3']
-    //     })
-    // },
-    // w: {
-    //     sound: new Howl({
-    //       urls: ['./sounds/clay.mp3']
-    //     })
-    // },
-    // e: {
-    //     sound: new Howl({
-    //       urls: ['./sounds/confetti.mp3']
-    //     })
-    // },
-    // r: {
-    //     sound: new Howl({
-    //       urls: ['./sounds/corona.mp3']
-    //     })
-    // },
+
     //     t: {
     //     sound: new Howl({
     //       urls: ['./sounds/dotted-spiral.mp3']
@@ -408,6 +487,98 @@ var keyData = {
     //       urls: ['./sounds/moon.mp3']
     //     })
     // }
+
+    "7" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.C.octave7",
+        piaKeyPressClass: "white-press"
+    },
+    "&" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Db.octave7",
+        piaKeyPressClass: "black-press"
+    },
+    "8" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.D.octave7",
+        piaKeyPressClass: "white-press"
+    },
+    "*" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Eb.octave7",
+        piaKeyPressClass: "black-press"
+    },
+    "9" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.E.octave7",
+        piaKeyPressClass: "white-press"
+    },
+    "(" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.F.octave7",
+        piaKeyPressClass: "white-press"
+    },
+    "0" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.F.octave7",
+        piaKeyPressClass: "white-press"
+    },
+    ")" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Gb.octave7",
+        piaKeyPressClass: "black-press"
+    },
+    "-" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.G.octave7",
+        piaKeyPressClass: "white-press"
+    },
+    "_" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Ab.octave7",
+        piaKeyPressClass: "black-press"
+    },
+    "=" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.A.octave7",
+        piaKeyPressClass: "white-press"
+    },
+    "+" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Bb.octave7",
+        piaKeyPressClass: "black-press"
+    },
+    "Backspace" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.B.octave7",
+        piaKeyPressClass: "white-press"
+    },
 }
 
 
@@ -420,6 +591,8 @@ document.onkeydown = function (e) {
         return;
     }
 
+    console.dir(e);
+
     lastEvent = e;
     heldKeys[e.key] = true;
 
@@ -429,8 +602,6 @@ document.onkeydown = function (e) {
     if(keyData[e.key]){
         keyData[e.key].sound.play();
     }
-
-    console.dir(e);
 
     keyOnKeyboard.classList.add("selected");
     console.log(keyData[e.key].piaKeyPressClass);

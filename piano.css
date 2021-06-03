@@ -18,7 +18,7 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6em;
+    font-size: 1.8em;
     perspective: 35em;
 }
 .keyboard {
@@ -197,7 +197,9 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
     --leftOffset: 10.5em;
 } */
 
-.octave1 {
+
+/* setting for full 7 octave */
+/* .octave1 {
     --leftOffset: -25em;
 }
 
@@ -218,4 +220,23 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
 }
 .octave7 {
     --leftOffset: 17em;
+} */
+
+.octave2 {
+    --leftOffset: -21em;
+}
+.octave3 {
+    --leftOffset: -14em;
+}
+.octave4 {
+    --leftOffset: -7em;
+}
+.octave5 {
+    --leftOffset: 0em;
+}
+.octave6 {
+    --leftOffset: 7em;
+}
+.octave7 {
+    --leftOffset: 14em;
 }

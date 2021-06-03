@@ -487,7 +487,90 @@ var keyData = {
         piaKeyClass: ".black.Db.octave5",
         piaKeyPressClass: "black-press"
     },
-
+    "n" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.D.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "N" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Eb.octave5",
+        piaKeyPressClass: "black-press"
+    },
+    "m" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.E.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "M" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.F.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "h" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.F.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "H" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.Gb.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "j" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.G.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "J" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Ab.octave5",
+        piaKeyPressClass: "black-press"
+    },
+    "k" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.A.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "K" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".black.Bb.octave5",
+        piaKeyPressClass: "black-press"
+    },
+    "l" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.B.octave5",
+        piaKeyPressClass: "white-press"
+    },
+    "L" : {
+        sound: new Howl({
+            urls: ['./sounds/corona.mp3']
+        }),
+        piaKeyClass: ".white.C.octave6",
+        piaKeyPressClass: "white-press"
+    },
 
     //     t: {
     //     sound: new Howl({

@@ -46,27 +46,27 @@ li {
     font-size: 1em;
 }
   
-#tab {
+#Tab {
     width: 5em;
 }
   
-#caps {
+#CapsLock {
     width: 6em;
 }
   
-#left-shift {
+#ShiftLeft {
     width: 8em;
 }
   
-#enter {
+#Enter {
     width: 6em;
 }
   
-#right-shift {
+#ShiftRight {
     width: 8em;
 }
   
-#back {
+#Backspace {
     width: 5em;
 }
   

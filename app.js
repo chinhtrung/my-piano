@@ -45,7 +45,6 @@
 
 // targetRandomKey();
 
-
 var keyData = {
     q: {
         sound: new Howl({
@@ -196,12 +195,17 @@ document.onkeydown = function (e) {
         keyData[e.key].sound.play();
     }
 
+    let keyOnKeyboard = document.querySelector("#"+e.code);
+    keyOnKeyboard.classList.add("selected");
     choose.classList.add("white-press");
 };
 
 document.onkeyup = function (e) {
+    let keyOnKeyboard = document.querySelector("#"+e.code);
+    
     lastEvent = null;
     heldKeys[e.key] = false;
+    keyOnKeyboard.classList.remove("selected");
     choose.classList.remove("white-press");
 }
 

@@ -703,15 +703,31 @@ function addEventNote() {
     for (let each in keyData) {
         try {
             let note = document.querySelector(keyData[each].piaKeyClass);
+            let codeKey = document.querySelector("#" + keyData[each].code);
+            let isShifted = keyData[each].piaKeyPressClass === "black-press"? true : false;
+            let shiftLeft = document.querySelector("#ShiftLeft");
+
             note.addEventListener("mousedown", (e) => {
                 keyData[each].sound.play();
                 note.classList.add(keyData[each].piaKeyPressClass);
+                codeKey.classList.add("selected");
+                if (isShifted) {
+                    shiftLeft.classList.add("selected");
+                }
             });
+
+            let removeKeys = () => {
+                codeKey.classList.remove("selected");
+                shiftLeft.classList.remove("selected");
+            }
+
             note.addEventListener("mouseup", (e) => {
                 note.classList.remove(keyData[each].piaKeyPressClass);
+                removeKeys();
             });
             note.addEventListener("mouseleave", (e) => {
                 note.classList.remove(keyData[each].piaKeyPressClass);
+                removeKeys();
             });
         } catch (err) {
             console.log("err ", err);

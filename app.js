@@ -670,35 +670,48 @@ var keyData = {
 var lastEvent;
 var heldKeys = {};
 
+function selectCapsLock(status) {
+    if (status) {
+        document.querySelector("#CapsLock").classList.add("selected");
+    } else {
+        document.querySelector("#CapsLock").classList.remove("selected");
+    }
+}
+
 document.onkeydown = function (e) {
     if (lastEvent && lastEvent.key == e.key) {
         return;
     }
 
+    let keyOnKeyboard = document.querySelector("#" + e.code);
+
     lastEvent = e;
     heldKeys[e.key] = true;
 
-    let keyOnKeyboard = document.querySelector("#" + e.code);
+    keyOnKeyboard.classList.add("selected");
+    selectCapsLock(e.getModifierState("CapsLock"));
 
     if (keyData[e.key]) {
         let note = document.querySelector(keyData[e.key].piaKeyClass);
         keyData[e.key].sound.play();
         note.classList.add(keyData[e.key].piaKeyPressClass);
     }
-
-    keyOnKeyboard.classList.add("selected");
 };
 
 document.onkeyup = function (e) {
     let keyOnKeyboard = document.querySelector("#" + e.code);
+    lastEvent = null;
+    heldKeys[e.key] = false;
+
+    if (e.key === "CapsLock") {
+        return;
+    }
 
     if (keyData[e.key]) {
         let note = document.querySelector(keyData[e.key].piaKeyClass);
         note.classList.remove(keyData[e.key].piaKeyPressClass);
     }
 
-    lastEvent = null;
-    heldKeys[e.key] = false;
     keyOnKeyboard.classList.remove("selected");    
 }
 

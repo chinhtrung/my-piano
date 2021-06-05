@@ -1,768 +1,588 @@
-// const keys = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-
-// const timestamps = [];
-
-// timestamps.unshift(getTimestamp());
-
-// function getRandomNumber(min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-
-// function getRandomKey() {
-//   return keys[getRandomNumber(0, keys.length-1)]
-// }
-
-// function targetRandomKey() {
-//   const key = document.getElementById(getRandomKey());
-//   key.classList.add("selected");
-//   let start = Date.now()
-// }
-
-// function getTimestamp() {
-//   return Math.floor(Date.now() / 1000)
-// }
-
-// document.addEventListener("keyup", event => {
-//   const keyPressed = String.fromCharCode(event.keyCode);
-//   const keyElement = document.getElementById(keyPressed);
-//   const highlightedKey = document.querySelector(".selected");
-  
-//   keyElement.classList.add("hit")
-//   keyElement.addEventListener('animationend', () => {
-//     keyElement.classList.remove("hit")
-//   })
-  
-//   if (keyPressed === highlightedKey.innerHTML) {
-//     timestamps.unshift(getTimestamp());
-//     const elapsedTime = timestamps[0] - timestamps[1];
-//     console.log(`Character per minute ${60/elapsedTime}`)
-//     highlightedKey.classList.remove("selected");
-//     targetRandomKey();
-//   } 
-// })
-
-// targetRandomKey();
-
-// var keyData = {
-//     q: {
-//         sound: new Howl({
-//           urls: ['./sounds/bubbles.mp3']
-//         })
-//     },
-//     w: {
-//         sound: new Howl({
-//           urls: ['./sounds/clay.mp3']
-//         })
-//     },
-//     e: {
-//         sound: new Howl({
-//           urls: ['./sounds/confetti.mp3']
-//         })
-//     },
-//     r: {
-//         sound: new Howl({
-//           urls: ['./sounds/corona.mp3']
-//         })
-//     },
-//         t: {
-//         sound: new Howl({
-//           urls: ['./sounds/dotted-spiral.mp3']
-//         })
-//     },
-//     y: {
-//         sound: new Howl({
-//           urls: ['./sounds/flash-1.mp3']
-//         })
-//     },
-//     u: {
-//         sound: new Howl({
-//           urls: ['./sounds/flash-2.mp3']
-//         })
-//     },
-//     i: {
-//         sound: new Howl({
-//           urls: ['./sounds/flash-3.mp3']
-//         })
-//     },
-//     o: {
-//         sound: new Howl({
-//             urls: ['./sounds/glimmer.mp3']
-//         })
-//     },
-//     p: {
-//         sound: new Howl({
-//           urls: ['./sounds/moon.mp3']
-//         })
-//     },
-//     a: {
-//         sound: new Howl({
-//           urls: ['./sounds/pinwheel.mp3']
-//         })
-//     },
-//     s: {
-//         sound: new Howl({
-//           urls: ['./sounds/piston-1.mp3']
-//         })
-//     },
-//         d: {
-//         sound: new Howl({
-//           urls: ['./sounds/piston-2.mp3']
-//         })
-//     },
-//     f: {
-//         sound: new Howl({
-//           urls: ['./sounds/prism-1.mp3']
-//         })
-//     },
-//     g: {
-//         sound: new Howl({
-//           urls: ['./sounds/prism-2.mp3']
-//         })
-//     },
-//     h: {
-//         sound: new Howl({
-//           urls: ['./sounds/prism-3.mp3']
-//         })
-//     },
-//     j: {
-//         sound: new Howl({
-//           urls: ['./sounds/splits.mp3']
-//         })
-//     },
-//     k: {
-//         sound: new Howl({
-//           urls: ['./sounds/squiggle.mp3']
-//         })
-//     },
-//     l: {
-//         sound: new Howl({
-//           urls: ['./sounds/strike.mp3']
-//         })
-//     },
-//     z: {
-//         sound: new Howl({
-//           urls: ['./sounds/suspension.mp3']
-//         })
-//     },
-//     x: {
-//         sound: new Howl({
-//           urls: ['./sounds/timer.mp3']
-//         })
-//     },
-//     c: {
-//         sound: new Howl({
-//           urls: ['./sounds/ufo.mp3']
-//         })
-//     },
-//     v: {
-//         sound: new Howl({
-//           urls: ['./sounds/veil.mp3']
-//         })
-//     },
-//     b: {
-//         sound: new Howl({
-//           urls: ['./sounds/wipe.mp3']
-//         })
-//     },
-//     n: {
-//         sound: new Howl({
-//             urls: ['./sounds/zig-zag.mp3']
-//         })
-//     },
-//     m: {
-//         sound: new Howl({
-//           urls: ['./sounds/moon.mp3']
-//         })
-//     }
-// }
+var uiowaPath = "./pianoSounds/uiowa/m4a_format/";
 
 var keyData = {
     "`" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "C2.m4a"]
         }),
         piaKeyClass: ".white.C.octave2",
         piaKeyPressClass: "white-press"
     },
     "~" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "Db2.m4a"]
         }),
         piaKeyClass: ".black.Db.octave2",
         piaKeyPressClass: "black-press"
     },
     "1" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "D2.m4a"]
         }),
         piaKeyClass: ".white.D.octave2",
         piaKeyPressClass: "white-press"
     },
     "!" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "Eb2.m4a"]
         }),
         piaKeyClass: ".black.Eb.octave2",
         piaKeyPressClass: "black-press"
     },
     "2" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "E2.m4a"]
         }),
         piaKeyClass: ".white.E.octave2",
         piaKeyPressClass: "white-press"
     },
     "@" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "F2.m4a"]
         }),
         piaKeyClass: ".white.F.octave2",
         piaKeyPressClass: "white-press"
     },
     "3" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "F2.m4a"]
         }),
         piaKeyClass: ".white.F.octave2",
         piaKeyPressClass: "white-press"
     },
     "#" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "Gb2.m4a"]
         }),
         piaKeyClass: ".black.Gb.octave2",
         piaKeyPressClass: "black-press"
     },
     "4" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "G2.m4a"]
         }),
         piaKeyClass: ".white.G.octave2",
         piaKeyPressClass: "white-press"
     },
     "$" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "Ab2.m4a"]
         }),
         piaKeyClass: ".black.Ab.octave2",
         piaKeyPressClass: "black-press"
     },
     "5" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "A2.m4a"]
         }),
         piaKeyClass: ".white.A.octave2",
         piaKeyPressClass: "white-press"
     },
     "%" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "Bb2.m4a"]
         }),
         piaKeyClass: ".black.Bb.octave2",
         piaKeyPressClass: "black-press"
     },
     "6" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "B2.m4a"]
         }),
         piaKeyClass: ".white.B.octave2",
         piaKeyPressClass: "white-press"
     },
     "^" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "C3.m4a"]
         }),
         piaKeyClass: ".white.C.octave3",
         piaKeyPressClass: "white-press"
     },
     "q" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "C3.m4a"]
         }),
         piaKeyClass: ".white.C.octave3",
         piaKeyPressClass: "white-press"
     },
     "Q" : {
         sound: new Howl({
-            urls: ['./sounds/bubbles.mp3']
+            urls: [uiowaPath + "Db3.m4a"]
         }),
         piaKeyClass: ".black.Db.octave3",
         piaKeyPressClass: "black-press"
     },
     "w" : {
         sound: new Howl({
-            urls: ['./sounds/clay.mp3']
+            urls: [uiowaPath + "D3.m4a"]
         }),
         piaKeyClass: ".white.D.octave3",
         piaKeyPressClass: "white-press"
     },
     "W" : {
         sound: new Howl({
-            urls: ['./sounds/clay.mp3']
+            urls: [uiowaPath + "Eb3.m4a"]
         }),
         piaKeyClass: ".black.Eb.octave3",
         piaKeyPressClass: "black-press"
     },
     "e" : {
         sound: new Howl({
-            urls: ['./sounds/confetti.mp3']
+            urls: [uiowaPath + "E3.m4a"]
         }),
         piaKeyClass: ".white.E.octave3",
         piaKeyPressClass: "white-press"
     },
     "E" : {
         sound: new Howl({
-            urls: ['./sounds/confetti.mp3']
+            urls: [uiowaPath + "F3.m4a"]
         }),
         piaKeyClass: ".white.F.octave3",
         piaKeyPressClass: "white-press"
     },
     "r" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F3.m4a"]
         }),
         piaKeyClass: ".white.F.octave3",
         piaKeyPressClass: "white-press"
     },
     "R" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Gb3.m4a"]
         }),
         piaKeyClass: ".black.Gb.octave3",
         piaKeyPressClass: "black-press"
     },
     "t" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "G3.m4a"]
         }),
         piaKeyClass: ".white.G.octave3",
         piaKeyPressClass: "white-press"
     },
     "T" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Ab3.m4a"]
         }),
         piaKeyClass: ".black.Ab.octave3",
         piaKeyPressClass: "black-press"
     },
     "a" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "A3.m4a"]
         }),
         piaKeyClass: ".white.A.octave3",
         piaKeyPressClass: "white-press"
     },
     "A" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Bb3.m4a"]
         }),
         piaKeyClass: ".black.Bb.octave3",
         piaKeyPressClass: "black-press"
     },
     "s" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "B3.m4a"]
         }),
         piaKeyClass: ".white.B.octave3",
         piaKeyPressClass: "white-press"
     },
     "S" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C4.m4a"]
         }),
         piaKeyClass: ".white.C.octave4",
         piaKeyPressClass: "white-press"
     },
     "d" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C4.m4a"]
         }),
         piaKeyClass: ".white.C.octave4",
         piaKeyPressClass: "white-press"
     },
     "D" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Db4.m4a"]
         }),
         piaKeyClass: ".black.Db.octave4",
         piaKeyPressClass: "black-press"
     },
     "f" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "D4.m4a"]
         }),
         piaKeyClass: ".white.D.octave4",
         piaKeyPressClass: "white-press"
     },
     "F" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Eb4.m4a"]
         }),
         piaKeyClass: ".black.Eb.octave4",
         piaKeyPressClass: "black-press"
     },
     "g" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "E4.m4a"]
         }),
         piaKeyClass: ".white.E.octave4",
         piaKeyPressClass: "white-press"
     },
     "G" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F4.m4a"]
         }),
         piaKeyClass: ".white.F.octave4",
         piaKeyPressClass: "white-press"
     },
     "z" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F4.m4a"]
         }),
         piaKeyClass: ".white.F.octave4",
         piaKeyPressClass: "white-press"
     },
     "Z" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Gb4.m4a"]
         }),
         piaKeyClass: ".black.Gb.octave4",
         piaKeyPressClass: "black-press"
     },
     "x" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "G4.m4a"]
         }),
         piaKeyClass: ".white.G.octave4",
         piaKeyPressClass: "white-press"
     },
     "X" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Ab4.m4a"]
         }),
         piaKeyClass: ".black.Ab.octave4",
         piaKeyPressClass: "black-press"
     },
     "c" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "A4.m4a"]
         }),
         piaKeyClass: ".white.A.octave4",
         piaKeyPressClass: "white-press"
     },
     "C" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Bb4.m4a"]
         }),
         piaKeyClass: ".black.Bb.octave4",
         piaKeyPressClass: "black-press"
     },
     "v" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "B4.m4a"]
         }),
         piaKeyClass: ".white.B.octave4",
         piaKeyPressClass: "white-press"
     },
     "V" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C5.m4a"]
         }),
         piaKeyClass: ".white.C.octave5",
         piaKeyPressClass: "white-press"
     },
     "b" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C5.m4a"]
         }),
         piaKeyClass: ".white.C.octave5",
         piaKeyPressClass: "white-press"
     },
     "B" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Db5.m4a"]
         }),
         piaKeyClass: ".black.Db.octave5",
         piaKeyPressClass: "black-press"
     },
     "n" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "D5.m4a"]
         }),
         piaKeyClass: ".white.D.octave5",
         piaKeyPressClass: "white-press"
     },
     "N" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Eb5.m4a"]
         }),
         piaKeyClass: ".black.Eb.octave5",
         piaKeyPressClass: "black-press"
     },
     "m" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "E5.m4a"]
         }),
         piaKeyClass: ".white.E.octave5",
         piaKeyPressClass: "white-press"
     },
     "M" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F5.m4a"]
         }),
         piaKeyClass: ".white.F.octave5",
         piaKeyPressClass: "white-press"
     },
     "h" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F5.m4a"]
         }),
         piaKeyClass: ".white.F.octave5",
         piaKeyPressClass: "white-press"
     },
     "H" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Gb5.m4a"]
         }),
         piaKeyClass: ".white.Gb.octave5",
         piaKeyPressClass: "white-press"
     },
     "j" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "G5.m4a"]
         }),
         piaKeyClass: ".white.G.octave5",
         piaKeyPressClass: "white-press"
     },
     "J" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Ab5.m4a"]
         }),
         piaKeyClass: ".black.Ab.octave5",
         piaKeyPressClass: "black-press"
     },
     "k" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "A5.m4a"]
         }),
         piaKeyClass: ".white.A.octave5",
         piaKeyPressClass: "white-press"
     },
     "K" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Bb5.m4a"]
         }),
         piaKeyClass: ".black.Bb.octave5",
         piaKeyPressClass: "black-press"
     },
     "l" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "B5.m4a"]
         }),
         piaKeyClass: ".white.B.octave5",
         piaKeyPressClass: "white-press"
     },
     "L" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C6.m4a"]
         }),
         piaKeyClass: ".white.C.octave6",
         piaKeyPressClass: "white-press"
     },
     "y" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C6.m4a"]
         }),
         piaKeyClass: ".white.C.octave6",
         piaKeyPressClass: "white-press"
     },
     "Y" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Db6.m4a"]
         }),
         piaKeyClass: ".black.Db.octave6",
         piaKeyPressClass: "black-press"
     },
     "u" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "D6.m4a"]
         }),
         piaKeyClass: ".white.D.octave6",
         piaKeyPressClass: "white-press"
     },
     "U" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Eb6.m4a"]
         }),
         piaKeyClass: ".black.Eb.octave6",
         piaKeyPressClass: "black-press"
     },
     "i" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "E6.m4a"]
         }),
         piaKeyClass: ".white.E.octave6",
         piaKeyPressClass: "white-press"
     },
     "I" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F6.m4a"]
         }),
         piaKeyClass: ".white.F.octave6",
         piaKeyPressClass: "white-press"
     },
     "o" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F6.m4a"]
         }),
         piaKeyClass: ".white.F.octave6",
         piaKeyPressClass: "white-press"
     },
     "O" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Gb6.m4a"]
         }),
         piaKeyClass: ".black.Gb.octave6",
         piaKeyPressClass: "black-press"
     },
     "p" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "G6.m4a"]
         }),
         piaKeyClass: ".white.G.octave6",
         piaKeyPressClass: "white-press"
     },
     "P" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Ab6.m4a"]
         }),
         piaKeyClass: ".black.Ab.octave6",
         piaKeyPressClass: "black-press"
     },
     "[" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "A6.m4a"]
         }),
         piaKeyClass: ".white.A.octave6",
         piaKeyPressClass: "white-press"
     },
     "{" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Bb6.m4a"]
         }),
         piaKeyClass: ".black.Bb.octave6",
         piaKeyPressClass: "black-press"
     },
     "]" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "B6.m4a"]
         }),
         piaKeyClass: ".white.B.octave6",
         piaKeyPressClass: "white-press"
     },
     "}" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C7.m4a"]
         }),
         piaKeyClass: ".white.C.octave7",
         piaKeyPressClass: "white-press"
     },
     "7" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "C7.m4a"]
         }),
         piaKeyClass: ".white.C.octave7",
         piaKeyPressClass: "white-press"
     },
     "&" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Db7.m4a"]
         }),
         piaKeyClass: ".black.Db.octave7",
         piaKeyPressClass: "black-press"
     },
     "8" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "D7.m4a"]
         }),
         piaKeyClass: ".white.D.octave7",
         piaKeyPressClass: "white-press"
     },
     "*" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Eb7.m4a"]
         }),
         piaKeyClass: ".black.Eb.octave7",
         piaKeyPressClass: "black-press"
     },
     "9" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "E7.m4a"]
         }),
         piaKeyClass: ".white.E.octave7",
         piaKeyPressClass: "white-press"
     },
     "(" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F7.m4a"]
         }),
         piaKeyClass: ".white.F.octave7",
         piaKeyPressClass: "white-press"
     },
     "0" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "F7.m4a"]
         }),
         piaKeyClass: ".white.F.octave7",
         piaKeyPressClass: "white-press"
     },
     ")" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Gb7.m4a"]
         }),
         piaKeyClass: ".black.Gb.octave7",
         piaKeyPressClass: "black-press"
     },
     "-" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "G7.m4a"]
         }),
         piaKeyClass: ".white.G.octave7",
         piaKeyPressClass: "white-press"
     },
     "_" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Ab7.m4a"]
         }),
         piaKeyClass: ".black.Ab.octave7",
         piaKeyPressClass: "black-press"
     },
     "=" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "A7.m4a"]
         }),
         piaKeyClass: ".white.A.octave7",
         piaKeyPressClass: "white-press"
     },
     "+" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "Bb7.m4a"]
         }),
         piaKeyClass: ".black.Bb.octave7",
         piaKeyPressClass: "black-press"
     },
     "Backspace" : {
         sound: new Howl({
-            urls: ['./sounds/corona.mp3']
+            urls: [uiowaPath + "B7.m4a"]
         }),
         piaKeyClass: ".white.B.octave7",
         piaKeyPressClass: "white-press"
     },
 }
-
-
 
 var lastEvent;
 var heldKeys = {};
@@ -771,8 +591,6 @@ document.onkeydown = function (e) {
     if (lastEvent && lastEvent.key == e.key) {
         return;
     }
-
-    console.dir(e);
 
     lastEvent = e;
     heldKeys[e.key] = true;

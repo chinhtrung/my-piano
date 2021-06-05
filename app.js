@@ -603,7 +603,6 @@ document.onkeydown = function (e) {
     }
 
     keyOnKeyboard.classList.add("selected");
-    console.log(keyData[e.key].piaKeyPressClass);
     note.classList.add(keyData[e.key].piaKeyPressClass);
 };
 

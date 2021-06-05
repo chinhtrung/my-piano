@@ -682,6 +682,9 @@ document.onkeydown = function (e) {
     if (lastEvent && lastEvent.key == e.key) {
         return;
     }
+    if (e.key === "Tab") {
+        return;
+    }
 
     let keyOnKeyboard = document.querySelector("#" + e.code);
 
@@ -716,13 +719,14 @@ document.onkeyup = function (e) {
 }
 
 function addEventNote() {
+    let shiftLeft = document.querySelector("#ShiftLeft");
+
     for (let each in keyData) {
         try {
             let note = document.querySelector(keyData[each].piaKeyClass);
             let codeKey = document.querySelector("#" + keyData[each].code);
             let isShifted = keyData[each].piaKeyPressClass === "black-press"? true : false;
-            let shiftLeft = document.querySelector("#ShiftLeft");
-
+            
             note.addEventListener("mousedown", (e) => {
                 keyData[each].sound.play();
                 note.classList.add(keyData[each].piaKeyPressClass);

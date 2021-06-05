@@ -217,22 +217,22 @@ var keyData = {
         piaKeyPressClass: "white-press",
         code: "KeyS"
     },
-    "S" : {
+    // "S" : {
+    //     sound: new Howl({
+    //         urls: [uiowaPath + "C4.m4a"]
+    //     }),
+    //     piaKeyClass: ".white.C.octave4",
+    //     piaKeyPressClass: "white-press",
+    //     code: "KeyS"
+    // },
+    "d" : {
         sound: new Howl({
             urls: [uiowaPath + "C4.m4a"]
         }),
         piaKeyClass: ".white.C.octave4",
         piaKeyPressClass: "white-press",
-        code: "KeyS"
+        code: "KeyD"
     },
-    // "d" : {
-    //     sound: new Howl({
-    //         urls: [uiowaPath + "C4.m4a"]
-    //     }),
-    //     piaKeyClass: ".white.C.octave4",
-    //     piaKeyPressClass: "white-press"
-    //     code: "KeyD"
-    // },
     "D" : {
         sound: new Howl({
             urls: [uiowaPath + "Db4.m4a"]
@@ -679,24 +679,27 @@ document.onkeydown = function (e) {
     heldKeys[e.key] = true;
 
     let keyOnKeyboard = document.querySelector("#" + e.code);
-    let note = document.querySelector(keyData[e.key].piaKeyClass);
 
-    if(keyData[e.key]){
+    if (keyData[e.key]) {
+        let note = document.querySelector(keyData[e.key].piaKeyClass);
         keyData[e.key].sound.play();
+        note.classList.add(keyData[e.key].piaKeyPressClass);
     }
 
     keyOnKeyboard.classList.add("selected");
-    note.classList.add(keyData[e.key].piaKeyPressClass);
 };
 
 document.onkeyup = function (e) {
     let keyOnKeyboard = document.querySelector("#" + e.code);
-    let note = document.querySelector(keyData[e.key].piaKeyClass);
-    
+
+    if (keyData[e.key]) {
+        let note = document.querySelector(keyData[e.key].piaKeyClass);
+        note.classList.remove(keyData[e.key].piaKeyPressClass);
+    }
+
     lastEvent = null;
     heldKeys[e.key] = false;
-    keyOnKeyboard.classList.remove("selected");
-    note.classList.remove(keyData[e.key].piaKeyPressClass);
+    keyOnKeyboard.classList.remove("selected");    
 }
 
 function addEventNote() {

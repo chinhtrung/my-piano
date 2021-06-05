@@ -50,20 +50,25 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
     transform-origin: top;
     transition: all 0.2s;
 }
-.white:hover {
+
+/* original */
+/* .white:hover {
     transform: rotateX(-4.2deg);
 }
 .white:hover::after {
     opacity: 1;
     background-color: #fff 7;
-}
+} */
+/* end original */
+
 
 /* add */
 .white-press {
     transform: rotateX(-4.2deg);
 }
 .white-press::after{
-    transform: rotateX(-4.2deg);
+    opacity: 1;
+    background-color: #fff 7;
 }
 
 /*end add */
@@ -101,13 +106,16 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
     transform-origin: top;
     transition: transform 0.2s;
 }
-.black:hover {
+
+/* original */
+/* .black:hover {
     transform: translateZ(0.25em) rotateX(-4.2deg);
 }
 .black:hover::after {
     opacity: 1;
     background-color: #000 7;
-}
+} */
+/* end original */
 
 /* add */
 .black-press {

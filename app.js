@@ -1,4 +1,4 @@
-var uiowaPath = "./pianoSounds/uiowa/m4a_format/";
+var uiowaPath = "./public/src/pianoSounds/uiowa/m4a_format/";
 
 var keyData = {
     "`" : {

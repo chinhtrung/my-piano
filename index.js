@@ -17,6 +17,6 @@ app.get('/*', (req,res)=>{
     res.redirect('/the_simple_piano');
 })
 
-app.listen(8080, ()=>{
-    console.log("Listening on port 8080")
+app.listen(1234, ()=>{
+    console.log("Listening on port 1234")
 })

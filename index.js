@@ -8,13 +8,13 @@ app.use(express.static(path.join(__dirname, 'files')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
-app.get('/the_simple_piano', (req,res)=>{
+app.get('/thesimplepiano', (req,res)=>{
     console.log("NEW REQUEST");
     res.render('home', {dirPath: __dirname});
 })
 
 app.get('/*', (req,res)=>{
-    res.redirect('/the_simple_piano');
+    res.redirect('/thesimplepiano');
 })
 
 app.listen(1234, ()=>{

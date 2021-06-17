@@ -49,27 +49,22 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]] -->
-
 ![alt text](https://github.com/chinhtrung/my-piano/blob/master/public/src/picture/web_screenshot.PNG)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+There are many great virtual piano websites but I decide to create my own one. Since I have background in playing piano, I hope that it will help me in designing this website to improve the experience of users. I want to make it as simple as possible in the playstyle, I name my project <strong> The Simple Piano </strong>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+Here's my ultimate goal: 🎹
+* It should be simple and intuitive to use for everyone
+* Your piano skill can be transfered from real life to the internet
+* Your playstyle, keypress combination can be improved from time to time
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [node.js](https://nodejs.org/en/)
+* [express.js](https://expressjs.com/)
 
 
 

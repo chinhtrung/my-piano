@@ -133,9 +133,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
+Distributed under the MIT License.
 
 <!-- CONTACT -->
 ## Contact
@@ -153,3 +151,5 @@ Project Link: [https://github.com/chinhtrung/my-piano](https://github.com/chinht
 * [Piano Sound Source](http://theremin.music.uiowa.edu/MISpiano.html#)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Choose an Open Source License](https://choosealicense.com)
+
+## Have fun :smile:

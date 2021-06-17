@@ -104,9 +104,9 @@ Install npm to your local machine
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This website is made to bring the experience of playing piano to the internet. I hope you will find it enjoyable 😄
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 
 

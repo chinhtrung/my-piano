@@ -105,6 +105,7 @@ Install npm to your local machine
 ## Usage
 
 This website is made to bring the experience of playing piano to the internet. I hope you will find it enjoyable 😄
+The live server has been setup to try out [thesimplepiano.xyz](http://thesimplepiano.xyz/) ⌨️🎹
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -149,7 +150,5 @@ Project Link: [https://github.com/chinhtrung/my-piano](https://github.com/chinht
 * [Partially usage of codepen.io design - CSS Keyboard](https://codepen.io/amit_sheen/pen/gOmXoVO)
 * [Partially usage of codepen.io design - Keyboard Hero](https://codepen.io/evilpaper/pen/dyyZjLQ)
 * [Piano Sound Source](http://theremin.music.uiowa.edu/MISpiano.html#)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Choose an Open Source License](https://choosealicense.com)
 
 ## Have fun :smile:

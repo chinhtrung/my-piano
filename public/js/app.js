@@ -682,10 +682,7 @@ document.onkeydown = function (e) {
     if (lastEvent && lastEvent.key == e.key) {
         return;
     }
-    if (e.key === "Tab") {
-        return;
-    }
-
+    
     let keyOnKeyboard = document.querySelector("#" + e.code);
 
     lastEvent = e;
@@ -698,6 +695,15 @@ document.onkeydown = function (e) {
         let note = document.querySelector(keyData[e.key].piaKeyClass);
         keyData[e.key].sound.play();
         note.classList.add(keyData[e.key].piaKeyPressClass);
+    }
+
+    if (e.code === "Tab") {
+        return false;
+    }
+
+    if (e.code === "Space") {
+        Howler.volume(0);
+        return false;
     }
 };
 
@@ -715,7 +721,12 @@ document.onkeyup = function (e) {
         note.classList.remove(keyData[e.key].piaKeyPressClass);
     }
 
-    keyOnKeyboard.classList.remove("selected");    
+    keyOnKeyboard.classList.remove("selected");
+
+    if (e.code === "Space") {
+        Howler.volume(1);
+        return false;
+    }
 }
 
 function addEventNote() {

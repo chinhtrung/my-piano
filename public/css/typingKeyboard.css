@@ -21,6 +21,7 @@ https://codepen.io/evilpaper/pen/dyyZjLQ */
     margin-bottom: 3em;
     font-size: 1em;
     letter-spacing: 0.3em;
+    padding-top: 2em;
 }
   
 .type-keyboard {
@@ -68,6 +69,10 @@ li {
   
 #Backspace {
     width: 5em;
+}
+
+#Space {
+    width: 28em;
 }
   
 .pinky { 

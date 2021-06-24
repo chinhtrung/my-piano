@@ -64,6 +64,8 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 * [node.js](https://nodejs.org/en/)
 * [express.js](https://expressjs.com/)
+* [howler.js](https://howlerjs.com/)
+* [nodemon npm package](https://www.npmjs.com/package/nodemon)
 
 
 <!-- GETTING STARTED -->

@@ -107,7 +107,7 @@ Install npm to your local machine
 ## Usage
 
 This website is made to bring the experience of playing piano to the internet. I hope you enjoy it 😄  
-The live server has been setup to try out at [thesimplepiano.xyz](http://thesimplepiano.xyz/) ⌨️🎹
+Try out at [chinhtrung.github.io/thesimplepiano/](https://chinhtrung.github.io/thesimplepiano/) ⌨️🎹
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 

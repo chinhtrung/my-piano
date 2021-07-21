@@ -85,7 +85,7 @@ Install npm to your local machine
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/chinhtrung/my-piano.git
+   git clone https://github.com/chinhtrung/thesimplepiano_server-setup.git
    ```
 2. Install NPM packages
    ```sh
